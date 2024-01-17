@@ -1,6 +1,6 @@
-import { set } from 'mongoose';
 import { useState } from 'react';
-import { Link,useNavigate} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
+import OAuth from '../components/OAuth';
 
 
 export default function Signup() {
@@ -78,10 +78,11 @@ export default function Signup() {
       disabled:opacity-80'>
         {loading ? 'Loading...' : 'Sign Up'}
       </button>
+      <OAuth/>
       </form>
       <div className='flex gap-2 mt-5'>
         <p>Have an account </p>
-        <Link Link to='/sign-in'>
+        <Link to='/sign-in'>
         <span className='text-blue-500'>Sign in</span>
         </Link>
         
