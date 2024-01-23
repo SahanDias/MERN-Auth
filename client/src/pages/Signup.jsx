@@ -53,7 +53,7 @@ export default function Signup() {
         type='text' 
         placeholder='Username' 
         id='username'
-        className='bg-slate-100 p-3 rounded-lg' 
+        className='bg-orange-200 p-3 rounded-lg' 
         onChange={handleChange} 
       />
 
@@ -61,7 +61,7 @@ export default function Signup() {
         type='text' 
         placeholder='Email' 
         id='email'
-        className='bg-slate-100 p-3 rounded-lg' 
+        className='bg-orange-200  p-3 rounded-lg' 
         onChange={handleChange}
       />
 
@@ -69,11 +69,11 @@ export default function Signup() {
         type='text' 
         placeholder='Password' 
         id='password'
-        className='bg-slate-100 p-3 rounded-lg' 
+        className='bg-orange-200  p-3 rounded-lg' 
         onChange={handleChange}
       />
 
-      <button disabled={loading} className='bg-slate-700 text-white p-3
+      <button disabled={loading} className='bg-orange-400 text-white p-3
       rounded-lg uppercase hover:opacity-95 
       disabled:opacity-80'>
         {loading ? 'Loading...' : 'Sign Up'}
