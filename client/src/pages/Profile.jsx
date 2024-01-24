@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from 'firebase/storage';
@@ -40,19 +39,12 @@ export default function Profile() {
     }
     );
   };
-=======
-import { useSelector } from "react-redux"
-
-export default function Profile() {
-  const {currentUser} = useSelector (state => state.user)
->>>>>>> 0269e11f8573c7955f2f782d59abb422e9d60576
   return (
     <div className="p-3 max-w-lg mx-auto">
       <h1 className='text-3xl font-semibold
       text-center my-7'>Profile</h1>
 
       <form className="flex flex-col gap-4">
-<<<<<<< HEAD
         <input type="file" ref={fileRef} hidden accept="image/*"
         onChange={(e) => setImage(e.target.files[0])}
         />
@@ -79,12 +71,6 @@ export default function Profile() {
                   uploaded successfully</span>
               ): ('')}
         </p>
-=======
-        <img
-          src={currentUser.profilePicture} alt="profile"
-          className="h-24 w-24 self-center cursor-pointer
-          rounded-full object-cover mt-2" />
->>>>>>> 0269e11f8573c7955f2f782d59abb422e9d60576
 
         <input 
           defaultValue={currentUser.username} 
