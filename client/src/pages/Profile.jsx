@@ -9,7 +9,7 @@ export default function Profile() {
   const [imagePercent, setImagePercent] = useState(0);
   const [imageError, setImageError] = useState(false);
   const [formData, setFormData] = useState({});
-  console.log(formData);
+
   const {currentUser} = useSelector (state => state.user);
   useEffect(() => {
     if (image) {
